@@ -1,0 +1,32 @@
+
+url: app/cars/
+permission: isAuthentificated
+request: get
+description: mashinlardi koriw ushin
+
+url: app/cars/detail<str:name>/
+permission: isAuthentificated
+request: get
+description: xarakteristikasin toliq koriw ushin
+
+url: adminuser/car/create/
+permission: isAdminuser
+request: post
+description: mashin qosiw ushin
+
+url: accounts/login/
+description: kiriw
+
+url: accounts/register/
+description: registraciya
+
+url: accounts/logout/
+description: shig'iw
+
+url: accounts/reset-password/
+description: paroldi sbros
+
+url: user/
+permission: isAdminuser
+request: update,get
+description: userler tuwrali mag'lumatlar
